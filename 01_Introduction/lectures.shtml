@@ -1,0 +1,846 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+ 
+  <link rel="SHORTCUT ICON" href="ml-logo.gif">
+  <link rel="stylesheet" href="style.css">
+
+  <title>
+
+Machine Learning 10-701/15-781: Lectures
+  </title>
+</head>
+ 
+<body link="#993333">
+   
+<table align="center" border="0" cellpadding="8" width="70%">
+  
+  <tbody>
+    <tr>
+ 
+      <td width="80%">  
+      <h1 align="left"> <br>
+      <b> Machine Learning</b> </h1>
+ 
+      <h2> 10-701/15-781, Spring 2011 </h2>
+      <h2> Carnegie Mellon University </h2>
+ 
+      <h2><a href="http://www.cs.cmu.edu/%7Etom">Tom Mitchell</a><br>
+ </h2>
+  
+      </td>
+ 
+      <td align="right" width="20%"><img src="ml-logo.gif" height="150" width="150">
+      </td>
+ 
+    </tr>
+  
+    <tr>
+ 
+      <td colspan="2" align="justify" valign="top"> <br>
+ 
+      <table width="100%">
+        <tbody>
+          <tr>
+            <td colspan="2" bgcolor="#993333"><img src="transparent.gif" border="0" height="1"></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="justify">
+            <table width="100%">
+              <tbody>
+                <tr>
+                  <td width="14%">
+                  <p class="headlink">
+                  <a href="."> <b>Home</b> </a> 
+                  </p>
+                  </td>
+                  <td width="14%">
+                  <p class="headlink">
+                  <a href="ppl.shtml"> <b>People </b></a>
+                  </p>
+                  </td>
+                  <td width="14%">
+                  <p class="headlink">
+                  <a href="lectures.shtml"> <b> Lectures </b></a>
+                  </p>
+                  </td>
+                  <td width="14%">
+                  <p class="headlink">
+                  <a href="recitations.shtml"> <b>Recitations </b></a>
+                  </p>
+                  </td>
+                  <td width="15%">
+                  <p class="headlink">
+                  <a href="hws.shtml"> <b>Homeworks </b></a>
+                  </p>
+                  </td>
+                  <td width="14%">
+                  <p class="headlink">
+                  <a href="proj.shtml"><b> Project </b></a>
+                  </p>
+                  </td>
+                  <td width="14%">
+                  <p class="headlink">
+                  <a href="prev.shtml"> <b> Previous material </b></a>
+                  </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" bgcolor="#993333"><img src="transparent.gif" border="0" height="1"></td>
+          </tr>
+
+<tr><td colspan="2">
+
+<!--Page content begins. Keep everything before this line.-->
+<table class="schedule" _base_target="_blank" style="margin-top: 20px; margin-bottom: 20px;">
+
+
+  <col style="vertical-align: top; text-align: left;" width="8%">
+  <col style="vertical-align: top; text-align: center;" width="13%">
+  <col style="vertical-align: top; text-align: center;" width="40%">
+  <col style="vertical-align: top; text-align: left;" width="29%">
+  <col style="vertical-align: top; text-align: left;" width="10%">
+  <tbody _base_target="_blank">
+    <tr _base_target="_blank">
+      <th _base_target="_blank">Date</th>
+      <th _base_target="_blank">Lecture</th>
+      <th _base_target="_blank">Topics</th>
+      <th _base_target="_blank">Readings and useful links</th>
+      <th _base_target="_blank">Handouts</th>
+    </tr>
+    <tr>
+      <td style="text-align: center;">Jan 11 </td>
+      <td style="text-align: center;">
+	Intro to ML<br>
+	Decision Trees<br>
+	<a href="./slides/DTreesAndOverfitting-1-11-2011_final.pdf">Slides</a><br>
+	<br>
+	<a href="http://cc-web.isri.cmu.edu/CourseCast/Viewer/Default.aspx?id=257476ca-e66a-4cdb-9ffc-8abdd3129954">video</a>
+      </td>
+      
+      <td> 
+	<ul>
+	  <li>Machine learning examples</li>
+	  <li>Well defined machine learning problem</li>
+	  <li>Decision tree learning</li>
+	</ul>
+      </td>
+      
+      <td>
+	Mitchell: Ch 3<br>
+	Bishop: Ch 14.4<br>
+	<a href="http://www.cs.cmu.edu/%7Etom/pubs/MachineLearning.pdf">The
+	Discipline of Machine Learning</a>
+      </td>
+      <td> &nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">Jan 13 </td>
+      <td style="text-align: center;">
+	Decision Tree learning<br>
+	<br>
+	Review of Probability<br>
+	<br>
+	<a href="./slides/Overfitting_ProbReview-1-13-2011-ann.pdf">Annotated
+	slides</a><br>
+	<br>
+	<a href="http://cc-web.isri.cmu.edu/CourseCast/Viewer/Default.aspx?id=ad6574d4-b695-4940-8449-2e09096ed16c">video</a>
+      </td>
+      <td> 
+	<ul>
+	  <li> The big picture </li>
+	  <li>Overfitting</li>
+	</ul>
+	<ul>
+	  <li>Random variables, probabilities</li>
+	</ul>
+      </td>
+      <td>
+	<a href="http://www.autonlab.org/tutorials/prob18.pdf">Andrew Moore's Basic Probability Tutorial</a><br>
+	Bishop: Ch. 1 thru 1.2.3<br>
+	Bishop: Ch 2 thru 2.2
+      </td>
+      <td> <a href="hws.shtml">HW1</a> out Jan 14
+      </td>
+
+      </tr>
+      
+      <tr>
+	<td>Jan 18</td>
+	<td>
+	<div style="text-align: center;">Probability and Estimation <br>
+	  <br>
+	  <a href="./slides/MLE_MAP_1-18-11-ann.pdf">Annotated slides</a><br>
+	  <br>
+ <a href="http://cc-web.isri.cmu.edu/CourseCast/Viewer/Default.aspx?id=49482c13-0a60-4b02-8220-cf70f20ecf3a">video</a>
+	</div>
+	</td>
+	<td>
+	  <ul>
+	    <li>Bayes rule</li>
+	    <li>MLE</li>
+	    <li>MAP</li>
+	  </ul>
+	</td>
+	<td> 
+	  <a href="http://www.autonlab.org/tutorials/prob18.pdf">Andrew Moore's Basic Probability Tutorial</a><br>
+	  Bishop: Ch. 1 thru 1.2.3<br>
+	  Bishop: Ch 2 thru 2.2
+	</td>
+	<td></td>
+      </tr>
+      
+      <tr>
+	<td>Jan 20</td>
+	<td>
+	<div style="text-align: center;">Naive Bayes <br>
+	  <br>
+	  <a href="./slides/NBayes-1-20-2011-ann.pdf">Annotated slides</a><br>
+	  <br>
+ <a href="http://cc-web.isri.cmu.edu/CourseCast/Viewer/Default.aspx?id=a666b6e6-ad23-4fa3-96ce-ae50a42f45a3">video</a>
+	</div>
+	</td>
+	<td>
+	  <ul>
+	    <li>Conditional independence</li>
+	    <li>Multinomial Naive Bayes</li>
+	  </ul>
+	</td>
+	<td>
+	  Mitchell:
+	  <a href="http://www.cs.cmu.edu/%7Etom/mlbook/NBayesLogReg.pdf">
+	  Naive	Bayes and Logistic Regression</a>
+	</td>
+	<td></td>
+      </tr>
+      
+      <tr>
+	<td>Jan 25</td>
+	<td>
+	<div style="text-align: center;">Gaussian Naive Bayes <br>
+	  <a href="./slides/GNB_1-25-2011.pdf">Slides</a><br>
+	  <a href="./slides/GNB_1-25-2011-ann.pdf">Annotated Slides</a><br>
+	  <br>
+ <a href="http://cc-web.isri.cmu.edu/CourseCast/Viewer/Default.aspx?id=7cd3bb34-558a-4f64-9cec-e5ff9b2b4ad1">video</a>
+	</div>
+	</td>
+	<td>
+	  <ul>
+	    <li>Gaussian Bayes classifiers</li>
+	    <li> Document classification </li>
+	    <li> Brain image classification </li>
+	    <li> Form of decision surfaces </li>
+	  </ul>
+	</td>
+	<td>
+	  Mitchell:
+	  <a href="http://www.cs.cmu.edu/%7Etom/mlbook/NBayesLogReg.pdf">
+	  Naive	Bayes and Logistic Regression</a>
+	</td>
+	<td>
+	<div style="text-align: center;">
+	  HW1 due<br>
+	  HW2 out
+	</div>
+	</td>
+      </tr>
+      
+      <tr>
+	<td>Jan 27</td>
+	<td>
+	  <div style="text-align: center;">Logistic Regression <br>
+	    <br>
+	    <a href="./slides/LR_1-27-2011.pdf">Slides</a><br>
+	    <a href="./slides/LR_1-27-2011-ann.pdf">Annotated slides</a><br>
+	    <br>
+ <a href="http://cc-web.isri.cmu.edu/CourseCast/Viewer/Default.aspx?id=f7eac1e6-5416-4b35-aaf1-12e0a8eadbfd">video</a>
+	  </div>
+	</td>
+	<td>
+	  <ul>
+	    <li>Naive Bayes - the big picture
+	    <li>Logistic Regression: Maximizing conditional likelihood</li>
+	    <li>Gradient ascent as a general learning/optimization method
+	  </ul>
+	</td>
+	<td>
+	  Mitchell:
+	  <a href="http://www.cs.cmu.edu/%7Etom/mlbook/NBayesLogReg.pdf">
+	  Naive	Bayes and Logistic Regression</a>
+	  <br>
+	  <br>
+	  Ng & Jordan: <a href="http://www.cs.cmu.edu/%7Eawm/10701/readings/NgJordanNIPS2001.ps">On
+	  Discriminative and Generative Classifiers</a>, NIPS, 2001.
+	</td>
+	<td></td>
+      </tr>
+      
+      <tr>
+	<td>Feb 1</td>
+	<td>	  <div style="text-align: center;">Linear Regression <br>
+	    <br>
+	    <a href="./slides/GenDiscr_2_1-2011.pdf">Slides</a><br>
+	    <a href="./slides/GenDiscr_2_1-2011-ann.pdf">Annotated
+	    slides</a><br>
+	    <br>
+ <a href="http://cc-web.isri.cmu.edu/CourseCast/Viewer/Default.aspx?id=70a936ec-7e96-4719-ad3c-2d2f87f2c0e0">video</a>
+	  </div>
+	</td>
+	<td>
+	  <ul>
+	    <li>Generative/Discriminative models</li>
+	    <li>minimizing squared error and maximizing data likelihood</li>
+	    <li>bias-variance decomposition</li>
+	    <li>regularization</li>
+	  </ul>
+	</td>
+	<td></td>
+	<td></td>
+      </tr>
+      
+    <tr>
+      <td>Feb 3</td>
+      <td>
+	<div style="text-align: center;">Practical Issues <br>
+	  <br>
+	</div> 
+      </td>
+      <td>
+	<ul>
+	  <li>Feature selection</li>
+	  <li>Overfitting</li>
+	  <li>Bias-Variance tradeoff</li>
+	</ul>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    
+    <tr>
+      <td>Feb 8</td>
+      <td>	 
+	<div style="text-align: center;">Graphical models 1 <br>
+	  <a href="./slides/GrMod1_2_8_2011-ann.pdf">Annotated slides</a><br>
+	  <br>
+ <a href="http://cc-web.isri.cmu.edu/CourseCast/Viewer/Default.aspx?id=bc507778-7a18-4121-b345-83d9bab72f55">video</a>
+	</div> 
+      </td>
+      <td>
+	<ul>
+	  <li>Bayes nets</li>
+	  <li>representing joint distributions with conditional independence assumptions</li>
+	</ul>
+      </td>
+      <td>
+	<div style="text-align: center;">
+	  <a href="http://research.microsoft.com/en-us/um/people/cmbishop/prml/Bishop-PRML-sample.pdf">Bishop: Ch 8, through 8.2</a>
+	</div>
+      </td>
+      <td>
+	<div style="text-align: center;">
+	  HW3 out
+      </div>	
+      </td>
+    </tr>
+    <tr>
+      <td>Feb 15</td>
+      <td>
+ 	<div style="text-align: center;">Graphical models 2 <br>
+	  <a href="./slides/GrMod2_2_15_2011-ann.pdf">slides</a><br>
+<a href="http://cc-web.isri.cmu.edu/CourseCast/Viewer/Default.aspx?id=16197605-aafd-4d2c-bcb3-c6a00be0757d">video</a>
+      </div> 
+      </td>
+      <td>
+	<ul>
+          <li>D-separation and Conditional Independence</li>
+          <li>Inference</li>
+          <li>Learning from fully observed data</li>
+          <li>Learning from partially observed data</li>
+	</ul>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Feb 17</td>
+      <td>
+	<div style="text-align: center;">Graphical models 3<br>
+	  <br>
+	  <a href="./slides/GrMod3_2_17_2011-ann.pdf">annotated slides</a>
+	  <br>
+ <a href="http://cc-web.isri.cmu.edu/CourseCast/Viewer/Default.aspx?id=5a472d59-ce0d-4775-9b10-b9e8df68e343">video</a>
+	</div>
+      </td>
+      <td>
+	<ul>
+          <li>EM</li>
+	</ul>
+      </td>
+      <td>
+<a href="http://www.cs.cmu.edu/~aarti/Class/10701/readings/gentle_tut_HMM.pdf">EM
+  and HMM tutorial</a> J. Bilmes
+</td>
+      <td></td>
+    </tr>
+    <tr>
+   
+   <td>Feb 22</td>
+      <td>
+	<div style="text-align: center;">Graphical models 4<br>
+	  <a href="./slides/GrMod4_2_22_2011-ann.pdf">annotated slides</a>
+	  <br>
+ <a href="http://cc-web.isri.cmu.edu/CourseCast/Viewer/Default.aspx?id=0b841b34-250b-44f4-ac65-98b42c86287e">video</a>
+	  <br>
+	</div>
+      </td>
+      <td>
+	<ul>
+          <li>Mixture of Gaussians clustering</li>
+	  <li> Learning Bayes Net structure - Chow Liu </li>
+	</ul>
+      </td>
+      <td>
+<a href="http://www.cs.cmu.edu/~aarti/Class/10701/readings/intro_gm.pdf">Intro. to Graphical Models</a>,  K. Murphy <br>
+<a href="http://www.cs.cmu.edu/~aarti/Class/10701/readings/graphical_model_Jordan.pdf">Graphical Models tutorial</a>, M.  Jordan <br>
+</td>
+      <td>	
+	<div style="text-align: center;">
+	  HW3 due<br>
+	  HW4 out
+	</div>
+      </td>
+    </tr>
+    <tr>
+      <td>Feb 24</td>
+      <td>
+	<div style="text-align: center;">
+	  Computational<br>
+	  Learning<br>
+	  Theory<br>
+	  <a href="./slides/PAC-learning1-2-24-2011-ann.pdf">annotated
+	  slides</a> <br>
+ <a href="http://cc-web.isri.cmu.edu/CourseCast/Viewer/Default.aspx?id=07cb3ba8-bea9-41e6-ba9f-50d7b1c87bf0">video</a>
+      </div>
+      </td>
+      <td>
+	<ul>
+	  <li> PAC Learning </li>
+	</ul>
+      </td>
+      <td>Mitchell: Ch. 7 </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mar 1</td>
+      <td>	<div style="text-align: center;"> Midterm Review<br>
+	  <a href="./slides/PAC-learning2_3-1-2011-ann.pdf"> PAC learning slides</a> <br>
+	  <a href="./slides/Midterm-review-3-1-2011-ann.pdf"> midterm review slides</a> <br>
+	  <a href="http://cc-web.isri.cmu.edu/CourseCast/Viewer/Default.aspx?id=558031db-3afe-461a-8c04-8f417fa66dd2">video</a>
+      </div></td>
+      <td></td>
+      <td></td>
+      <td>
+	<div style="text-align: center;">
+	  HW4 due
+      </div>
+      </td>
+    </tr>
+    <tr>
+      <td style="background-color: rgb(255, 255, 102);">Mar 3</td>
+      <td style="background-color: rgb(255, 255, 102);">Midterm Exam</td>
+      <td style="background-color: rgb(255, 255, 102);">
+	<ul>
+          <li>in class</li>
+          <li>open notes, open book, no internet</li>
+	</ul>
+      </td>
+      <td style="background-color: rgb(255, 255, 102);"></td>
+      <td style="background-color: rgb(255, 255, 102);">
+        <a href="midterm.pdf">Midterm</a><br/>
+        <a href="midterm_sol.pdf">Solution</a>
+      </td>
+    </tr>
+   <tr>
+      <td>Mar 15</td>
+      <td>
+	<div style="text-align: center;">
+	  Computational<br>
+	  Learning<br>
+	  Theory<br>
+	  <a href="./slides/PAC-learning3_3-15-2011_ann.pdf">annotated
+	  slides</a> <br>
+ <a href="http://cc-web.isri.cmu.edu/CourseCast/Viewer/Default.aspx?id=a8eedb53-a516-4e58-99fe-768361da9bf4">video</a>
+      </div>
+      </td>
+      <td>
+	<ul>
+	  <li> Mistake bounds </li>
+	  <li> Weighted Majority Algorithm </li>
+	</ul>
+      </td>
+      <td>Mitchell: Ch. 7 </td>
+      <td></td>
+    </tr>    
+  <tr>
+      <td>Mar 17</td>
+      <td>
+	<div style="text-align: center;">
+	  Semi-Supervised <br>Learning<br>
+	    slides:
+	  <a href="./slides/LabUnlab-3-17-2011.pdf">
+	  CoTraining</a> <br>
+	  <a href="./slides/NELL_March2011.pdf">
+	  NELL</a> <br>
+ <a href="http://cc-web.isri.cmu.edu/CourseCast/Viewer/Default.aspx?id=1533c941-093a-459f-8302-90b1ecf63de6">video</a>
+      </div>
+      </td>
+      <td>
+	<ul>
+	  <li>CoTraining / Multi-view Learning </li>
+	  <li> Never ending learning (NELL) </li>
+	</ul>
+      </td>
+      <td> 
+	<ul>
+	  <li><a href="http://www.cs.cmu.edu/afs/cs.cmu.edu/project/theo-20/www/mitchell-pubs/colt98_final.ps"> Cotraining: Blum & Mitchell</a></li>
+	  <li><a href="http://rtw.ml.cmu.edu/papers/carlson-aaai10.pdf"> NELL: Carlson et al., 2010</a> </li>
+	</ul>
+      </td>
+      <td></td>
+    </tr>    
+
+   <tr>
+      <td>Mar 22</td>
+      <td>
+	<div style="text-align: center;">
+	  Hidden Markov Models<br>
+	  <a href="./slides/HMMs_3_22-2011_ann.pdf">annotated
+	  slides</a> <br><br>
+ <! a href="http://cc-web.isri.cmu.edu/CourseCast/Viewer/Default.aspx?id=b4801d9e-b59a-4624-9b0a-98b8bd81286c" video /a>
+      </div>
+      </td>
+      <td>
+	<ul>
+	  <li> Markov models </li>
+	  <li> HMM's and Bayes Nets </li>
+	  <li> Other probabilistic time series models </li>
+	</ul>
+      </td>
+      <td>Bishop Ch. 13 </td>
+      <td></td>
+    </tr>    
+
+    <tr>
+      <td>Mar 24</td>
+      <td>
+	<div style="text-align: center;">
+	  Neural Networks<br>
+	  <a href="./slides/NNets-701-3_24_2011_ann.pdf">slides</a> <br><br>
+	  <a href="http://cc-web.isri.cmu.edu/CourseCast/Viewer/Default.aspx?id=5d22928c-f3b4-4346-9702-24d306e17ef9">video</a>
+	</div>
+      </td>
+      <td>
+	<ul>
+	  <li> Non-linear regression </li>
+	  <li> Backpropagation and Gradient descent </li>
+	  <li> Learning hidden layer representations </li>
+	</ul>
+      </td>
+      <td>Mitchell Ch. 4 <br> Bishop Ch. 5 </td>
+      <td>Project proposals due</td>
+    </tr>    
+    
+    <tr>
+      <td>Mar 29</td>
+      <td>
+	<div style="text-align: center;">
+	  Learning Representations I<br>
+	  <a href="./slides/DimensionalityReduction_03_29_2011_ann.pdf">slides</a> <br><br>
+	  <a href="http://cc-web.isri.cmu.edu/CourseCast/Viewer/Default.aspx?id=6c1ae619-01be-44e6-be66-4d78070823a2">video</a>
+	</div>
+      </td>
+      <td>
+	<ul>
+	  <li> Artificial neural networks </li>
+	  <li> PCA </li>
+	</ul>
+      </td>
+      <td> Bishop Ch. 12 through 12.1 <br>
+	<a href="./slides/pca_schlens.pdf">A Tutorial on PCA</a>, J. Schlens <br>
+	<a href="./slides/pca_wall.pdf">SVD and PCA</a>, Wall et al. <br>
+      </td>
+      <td></td>
+    </tr>    
+
+    <tr>
+      <td>Mar 31</td>
+      <td>
+	<div style="text-align: center;">
+	  Learning Representations II<br>
+	  <a href="./slides/DimensionalityReduction_03_31_2011_ann.pdf">slides</a> <br><br>
+	  <a href="http://cc-web.isri.cmu.edu/CourseCast/Viewer/Default.aspx?id=bca303c3-e7b7-49d9-8358-bb97e335386d">video</a>
+	</div>
+      </td>
+      <td>
+	<ul>
+	  <li> Deep belief networks </li>
+	  <li> ICA </li>
+	  <li> CCA </li>
+	</ul>
+      </td>
+      <td> 
+	<a href="./slides/DeepNets_science2006.pdf">Deep Belief Nets paper</a>, Hinton
+	& Salakhutdinov <br>
+	<a href="./slides/CCA_tutorial.pdf">CCA Tutorial</a>, M. Borga <br>
+      </td>
+      <td></td>
+    </tr>    
+    
+
+    <tr>
+      <td>Apr 5</td>
+      <td>
+	<div style="text-align: center;">
+	  Learning Representations III<br>
+	  <a href="./slides/DimensionalityReduction_04_5_2011_ann.pdf">slides</a> <br><br>
+	  <a href="http://cc-web.isri.cmu.edu/CourseCast/Viewer/Default.aspx?id=1fda61dd-2162-45f2-a179-1ce6153e40a6">video</a>
+	</div>
+      </td>
+      <td>
+	<ul>
+	  <li> Fisher Linear Discriminant </li>
+	  <li> Latent Dirichlet Allocation </li>
+	  <li> Intro to Kernel Functions  </li>
+	</ul>
+      </td>
+      <td> 
+	Bishop Ch. 6.1 (required) <br>
+	Bishop Ch. 6.2, 6.3 (optional)
+      </td>
+      <td></td>
+    </tr>    
+    
+
+    <tr>
+      <td>Apr 7</td>
+      <td>
+	<div style="text-align: center;">
+	  Kernel Methods and SVM's <br>
+	  <a href="./slides/Kernels_SVM_04_7_2011-ann.pdf">slides</a> <br><br>
+	  <a href="http://cc-web.isri.cmu.edu/CourseCast/Viewer/Default.aspx?id=99142e30-208b-4655-9be1-573583025a2a">video</a>
+	</div>
+      </td>
+      <td>
+	<ul>
+	  <li> Regression: Primal and Dual forms </li>
+	  <li> Kernels and Kernel Regression </li>
+	  <li> SVMs  </li>
+	</ul>
+      </td>
+      <td> 
+	Bishop Ch. 6.1  <br>
+	Bishop Ch. 7, through 7.1.2 
+      </td>
+      <td></td>
+    </tr>    
+    
+    <tr>
+      <td>Apr 12</td>
+      <td>
+	<div style="text-align: center;">
+	  SVM's II <br>
+	  <a href="./slides/Kernels_SVM2_04_12_2011-ann.pdf">slides</a> <br><br>
+	  <a href="http://cc-web.isri.cmu.edu/CourseCast/Viewer/Default.aspx?id=3c9a2813-8d74-400c-bb9b-fa261c93067b">video</a>
+	</div>
+      </td>
+      <td>
+	
+	<ul>
+	  <li> Maximizing the margin </li>
+	  <li> Noise and soft margin SVM's </li>
+	  <li> PAC learning and SVM's  </li>
+	  <li> Hinge loss, log loss, 0-1 loss  </li>
+	</ul>
+      </td>
+      <td>
+	Bishop Ch. 7, through 7.1.2 
+      </td>
+      <td>Project midway report due</td>
+    </tr>
+    
+    <tr>
+      <td>Apr 14</td>
+      <td></td>
+      <td>No CMU classes today</td>
+      <td></td>
+      <td></td>
+    </tr>
+    
+    <tr>
+            <td>Apr 19</td>
+	    <td>
+	      <div style="text-align: center;">
+		Active Learning <br>
+		<a href="./slides/settles-2.active.pdf">slides</a> <br><br>
+		<a href="http://cc-web.isri.cmu.edu/CourseCast/Viewer/Default.aspx?id=61b35cef-b2c0-4f1e-9438-545373d760d7">video</a>
+	      </div>
+	    </td>
+	    
+            <td>Guest lecture: Dr. Burr Settles
+	    <ul>
+	      <li> Uncertainty sampling </li>
+	      <li> Query by committee  </li>
+	    </ul>
+	    </td>
+            <td>Settles: <a href="http://www.cs.cmu.edu/~bsettles/pub/settles.activelearning.pdf">Active learning survey</a> </td>
+            <td></td>  
+    </tr>
+	  
+    <tr>
+            <td>Apr 21</td>
+	    <td>
+	      <div style="text-align: center;">
+		ML in Computational Biology <br>
+		<a href="./slides/Ziv_CompBio.pdf">slides</a> <br><br>
+		<a href="http://cc-web.isri.cmu.edu/CourseCast/Viewer/Default.aspx?id=64916f95-d11c-4d82-8901-badf36ee2a7c">video</a>
+	      </div>
+	    </td>
+            <td>Guest lecture: Prof. Ziv Bar-Joseph</td>
+            <td></td>
+            <td></td>
+
+          </tr>
+
+          <tr>
+            <td>Apr 26</td> 
+            <td>
+	      <div style="text-align: center;">
+		Reinforcement Learning I<br>
+		<a href="./slides/MDPs_RL_04_26_2011-ann.pdf">slides</a> <br><br>
+		<a href="http://cc-web.isri.cmu.edu/CourseCast/Viewer/Default.aspx?id=edf82c04-e170-4e8e-a55b-7de353225001">video</a>
+	      </div>
+	    </td>
+            <td>
+	      <ul>
+		<li> Markov Decision Processes
+		<li> Value Iteration
+		<li> Q learning
+	      </ul>
+	    </td>
+            <td>Kaelbling et al.: <a href="./slides/Kaelbling.pdf">Reinforcement Learning: A Survey</a></td>
+            <td></td>
+
+          </tr>
+
+          <tr>
+
+            <td>Apr 28</td>
+            <td>
+	      <div style="text-align: center;">
+		Reinforcement Learning 2<br>
+		<a href="./slides/MDPs_RL_04_28_2011.pdf">RL slides</a> <br>
+		<a href="./slides/FinalExamStudyTopics.pdf">Final study guide</a> <br>
+		<br>
+		<a href="http://cc-web.isri.cmu.edu/CourseCast/Viewer/Default.aspx?id=ae14075d-069b-405e-b509-00b15da25726">video</a>
+	      </div>
+	    </td>
+            <td>
+	      <ul>
+		<li>Q learning in non-deterministic domains
+		<li>RL as model for learning in animals
+		<li>Final exam review
+	      </ul>
+	    </td>
+            <td></td>
+            <td></td>
+          </tr>
+	  
+    <tr>
+      <td style="background-color: rgb(255, 255, 102);">May 6 (Friday)</td>
+      <td style="background-color: rgb(255, 255, 102);">Final Exam</td>
+      <td style="background-color: rgb(255, 255, 102);">
+	<ul>
+          <li>1-4pm</li>
+          <li>Location: Gates Hillman 4401</li>
+          <li>open notes, open book, no internet</li>
+	</ul>
+      </td>
+      <td style="background-color: rgb(255, 255,
+      102);"><b> <a href="./slides/FinalExamStudyTopics.pdf">Final study guide</a></td>
+      <td style="background-color: rgb(255, 255, 102);"></td>
+    </tr>
+
+
+    
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+        
+        
+  </tbody>
+      
+      
+</table>
+
+
+
+<!--Page content ends. Keep everything after this line.-->
+</td></tr>
+
+          <tr>
+            <td colspan="2" bgcolor="#993333"><img src="transparent.gif" border="0" height="1"></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+
+
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=8044312; 
+var sc_invisible=1; 
+var sc_security="61789cb4"; 
+</script>
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script>
+<noscript><div class="statcounter"><a title="vBulletin
+statistics" href="http://statcounter.com/vbulletin/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/8044312/0/61789cb4/1/"
+alt="vBulletin statistics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
