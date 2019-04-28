@@ -9,25 +9,31 @@ This repo. contains notes and projects from the CMU10-715 class. I took this cla
 
 # Table of Contents
 1. Supervised Learning	
-     * Introduction to Machine Learning, MLE, MAP, Naive Bayes	Barnabas
-2	M	Sep 14		Perceptron, Features, Stochastic Gradient Descent	Alex
-3	W	Sep 16		Neural Networks: Backprop, Layers	Alex
-4	M	Sep 21		Neural Networks: State, Memory, Representations	Alex
-5	W	Sep 23	Unsupervised Learning	Clustering, K-Means	Barnabas
-6	M	Sep 28		Expectation Maximization, Mixture of Gaussians	Barnabas
-7	W	Sep 30		Principal Component Analysis	Barnabas
-8	M	Oct 5	Kernel Machines	Convex Optimization, Duality, Linear and Quadratic Programs	Alex
-9	W	Oct 7		Support Vector Classification, Regression, Novelty Detection	Alex
-10	M	Oct 12		Features, Kernels, Hilbert Spaces	Alex
-11	W	Oct 14		Gaussian Processes 1	Barnabas
-12	M	Oct 19		Gaussian Processes 2	Barnabas
-13	W	Oct 21	Latent Space Models	Independent Component Analysis	Barnabas
-14	M	Oct 26	Graphical Models	Hidden Markov Models	Alex
-15	W	Oct 28		Directed Models	Alex
-16	M	Nov 2		Undirected Models	Alex
-17	W	Nov 4		Sampling, Markov Chain Monte Carlo Methods	Alex
-18	M	Nov 9	Midterm exam		
-19	W	Nov 11	Computational Learning theory	Risk Minimization	Barnabas
-20	M	Nov 16		VC Dimension	Barnabas
-21	W	Nov 18	Nonlinear dim reduction	Manifold Learning	Barnabas
-22	M	Nov 23	Big data and Scalability	Systems for Machine Learning, Parameter server
+     1. Introduction to Machine Learning, MLE, MAP, Naive Bayes
+     2. Perceptron, Features, Stochastic Gradient Descent
+     3. Neural Networks: Backprop, Layers
+     4. Neural Networks: State, Memory, Representations
+2. Unsupervised Learning	
+     1. Clustering, K-Means
+     2. Expectation Maximization, Mixture of Gaussians
+     3. Principal Component Analysis
+3. Kernel Machines	
+     1. Convex Optimization, Duality, Linear and Quadratic Programs
+     2. Support Vector Classification, Regression, Novelty Detection
+     3. Features, Kernels, Hilbert Spaces
+     4. Gaussian Processes 1
+     5. Gaussian Processes 2
+4. Latent Space Models	
+     1. Independent Component Analysis
+5. Graphical Models	
+     1. Hidden Markov Models
+     2. Directed Models
+     3. Undirected Models
+     4. Sampling, Markov Chain Monte Carlo Methods
+6. Computational Learning theory
+     1. Risk Minimization
+     2. VC Dimension	
+7. Nonlinear dim reduction
+     1. Manifold Learning
+8. Big data and Scalability	
+     1. Systems for Machine Learning, Parameter server
