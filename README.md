@@ -9,7 +9,7 @@ This repo. contains notes and projects from the CMU10-715 class. I took this cla
 
 # Table of Contents
 1. Supervised Learning	
-     1. Introduction to Machine Learning, MLE, MAP, Naive Bayes	Barnabas
+     * Introduction to Machine Learning, MLE, MAP, Naive Bayes	Barnabas
 2	M	Sep 14		Perceptron, Features, Stochastic Gradient Descent	Alex
 3	W	Sep 16		Neural Networks: Backprop, Layers	Alex
 4	M	Sep 21		Neural Networks: State, Memory, Representations	Alex
